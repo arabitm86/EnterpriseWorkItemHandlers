@@ -26,11 +26,10 @@ import org.kie.api.runtime.process.WorkItemManager;
 public class RestWorkItemHandler implements WorkItemHandler {
 
 	private String jsonPerson = null;
-	private final String USERNAME = "fswAdmin";
-	private final String PASSWORD= "p@ssw0rd";
+	private final String USERNAME = "username";
+	private final String PASSWORD= "password";
 	private Credentials credentials = null;
 
-	// "https://jboss-fuse-poc0.it.anl.gov:8443/person/terminate/";
 
 	public void abortWorkItem(WorkItem arg0, WorkItemManager arg1) {
 		// call this method when something goes wrong i.e service unavailable to terminate the node execution
